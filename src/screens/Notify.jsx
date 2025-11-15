@@ -1,5 +1,5 @@
 import React from 'react'
-import PastEvents from './PastEvents'
+import PastEvents from '../components/PastEvents'
 
 const Notify = () => {
   return (
@@ -13,7 +13,7 @@ const Notify = () => {
     eventName = "Cultural Carnival Night"
     eventDate = "28 March 2024"
     review = "Vibrant performances, colorful decorations, and an unforgettable night!"
-    imageUrl = "https://images.unsplash.com/photo-1515165562835-c3b8e3c6b8a5"/>
+    imageUrl = "https://images.unsplash.com/photo-1700152685840-7e117dee73df?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
     <PastEvents 
     eventName = "Hackverse 3.0"
     eventDate = "20 May 2024"
@@ -23,13 +23,12 @@ const Notify = () => {
     eventName = "AI & Robotics Workshop"
     eventDate = "10 July 2024"
     review = "An insightful workshop that bridged theory with hands-on robotics practice."
-    imageUrl = "https://images.unsplash.com/photo-1581091870632-1b59cbb1c7d1"/>
+    imageUrl = "https://plus.unsplash.com/premium_photo-1716396589180-0a7050c21098?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
     <PastEvents 
     eventName = "Entrepreneurship Expo"
     eventDate = "5 September 2024"
     review = "Great platform for startups to pitch their ideas and connect with investors."
     imageUrl = "https://images.unsplash.com/photo-1504384308090-c894fdcc538d"/>
-    <PastEvents/>
     </div>
   )
 }

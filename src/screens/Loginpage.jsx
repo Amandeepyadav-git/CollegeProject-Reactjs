@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 const Loginpage = () => {
   const [switche, setSwitche] = useState(false);
+  const [email, setEmail] = useState(null);
+  const [pass, setPass] = useState(null);
 
   return (
     <>
@@ -12,6 +14,8 @@ const Loginpage = () => {
           <div className="flex flex-col gap-2">
             <label className="text-sm text-gray-200">Email</label>
             <input
+            value={email}
+            onChange={(e)=>{setEmail(e.target.value)}}
               type="text"
               placeholder="Enter your Email"
               className="w-full p-3 rounded-md bg-transparent border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:shadow-[inset_0_0_10px_white] transition-all duration-300"
@@ -21,8 +25,10 @@ const Loginpage = () => {
           <div className="flex flex-col gap-2 relative">
             <label className="text-sm text-gray-200">Password</label>
             <input
+              value={pass}
+              onChange={(e)=>{setPass(e.target.value)}}
               type={switche ? "text" : "password"}
-              placeholder={switche ? "Set password" : "****"}
+              placeholder={switche ? "Set password" : "****"} 
               className="w-full p-3 rounded-md bg-transparent border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:shadow-[inset_0_0_10px_white] transition-all duration-300"
             />
             <button
@@ -41,8 +47,7 @@ const Loginpage = () => {
               Forgot password?
             </a>
           </div>
-
-          <button className="mt-4 bg-blue-600 hover:bg-blue-700 transition-all duration-300 rounded-md p-3 text-white font-semibold">
+          <button onClick={()=>{setEmail("");setPass("");console.log(email,pass)}} className="mt-4 bg-blue-600 hover:bg-blue-700 transition-all duration-300 rounded-md p-3 text-white font-semibold">
             LOGIN
           </button>
 

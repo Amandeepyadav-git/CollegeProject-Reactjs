@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import Main from './components/Main'
+import Main from './screens/Main'
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
-import Loginpage from './components/Loginpage';
-import Register from './components/Register';
-import Schedule from './components/Schedule';
-import Notify from './components/Notify';
+import Loginpage from './screens/Loginpage';
+import Register from './screens/Register';
+import Schedule from './screens/Schedule';
+import Notify from './screens/Notify';
 
 function App() {
 
