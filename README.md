@@ -17,7 +17,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 # TO RUN THIS FOLDER STEPS YOU MUST FOLLOW - 
+ - npm install
  - npm install -D tailwindcss @tailwindcss/vite autoprefixer postcss
  - npm install react react-dom
  - npm install -D vite @vitejs/plugin-react
- - npm install
