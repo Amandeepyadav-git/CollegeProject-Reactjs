@@ -35,6 +35,7 @@ const Loginpage = () => {
               onClick={() => setSwitche(!switche)}
               className="absolute right-3 top-9 text-sm text-blue-300 hover:text-white transition-all duration-200"
             >
+              <input type="checkbox" />
               {switche ? "Hide" : "Show"}
             </button>
           </div>
