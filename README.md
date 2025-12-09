@@ -21,4 +21,3 @@ If you are developing a production application, we recommend using TypeScript wi
  - npm install react react-dom
  - npm install -D vite @vitejs/plugin-react
  - npm install
- - 
